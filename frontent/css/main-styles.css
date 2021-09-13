@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root{
+    --color-1:#6FB6F8;
+    --color-2: white;
+    --color-3:#F8F9FF;
+    --color-4:#01215C;
+    --color-5:#878585;
+    --color-6:#2E92EF;
+    --color-7:#F1DD3C;
+    --color-8:#FFFBD2;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*{
+    font-family: 'Indie Flower' !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+main, 
+#main-info-content{
+    position: relative;
+}
+
