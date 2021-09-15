@@ -12,21 +12,7 @@
   width: 10px !important;
   border-radius: 100%;
 }
-#arrow-up {
-  color: var(--color-6);
-  border: 3px solid var(--color-7);
-  border-radius: 100%;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-}
-#arrow-up:hover,
-#search-icon:hover {
-  cursor: pointer;
-}
+
 
 /*Small devices*/
 @media (max-width: 576px) {

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mundo Animal</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main-styles.css">
@@ -17,10 +21,10 @@
 
 <body>
     <main>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light main-header">
+        <header class="sticky-lg-top">
+            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light main-header">
                 <div class="container-fluid align-items-center">
-                    <a class="navbar-brand order-2 order-lg-0" href="#index.html">
+                    <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
                         <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                     </a>
                     <h1 id="main-title" class="d-lg-none order-1 d-lg-none">Mundo Animal</h1>
@@ -31,7 +35,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                            <li class="nav-item d-none">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -134,13 +138,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <button id="arrow-up" class="btn">
-                <i class="bi-arrow-up"></i>
-            </button>
+            
         </section>
         <footer class="d-flex flex-column justify-content-center" id="main-footer">
-            <div class="d-flex flex-row col-12 flex-wrap flex-lg-row col-lg-10 justify-content-lg-center">
-                <div class="col-6 col-lg-2">
+            <div class="d-flex flex-row col-12 flex-wrap flex-lg-row justify-content-lg-evenly">
+                <div class="col-6 col-lg-1">
                     <h5>Nosotros</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos</a></li>
@@ -150,7 +152,7 @@
                     </ul>
                 </div>
 
-                <div class="col-6 col-lg-2">
+                <div class="col-6 col-lg-1">
                     <h5>Productos</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nutrición</a></li>
@@ -159,7 +161,7 @@
                     </ul>
                 </div>
 
-                <div class="col-6 col-lg-2">
+                <div class="col-6 col-lg-1">
                     <h5>Servicios</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pedidos</a></li>
@@ -167,7 +169,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-4">
                     <h5>Ubicación</h5>
                     <iframe id="map-location"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1631425262850!5m2!1ses!2sco"
@@ -175,9 +177,9 @@
                 </div>
             </div>
             <hr>
-            <div class="d-flex flex-column flex-lg-row col-lg-12" id="social-footer">
-                <p class="order-1">&copy; 2021 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex flex-row justify-content-center order-0">
+            <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-lg-between" id="social-footer">
+                <p class="order-1 order-lg-0">&copy; 2021 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex flex-row justify-content-center order-0 order-lg-1">
                     <li class="ms-3">
                         <a class="link-dark" href="#">
                             <i class="bi bi-facebook"></i>
@@ -201,6 +203,7 @@
                 </ul>
             </div>
         </footer>
+        
     </main>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
