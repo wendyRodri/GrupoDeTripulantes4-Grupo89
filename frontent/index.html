@@ -5,33 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Animal</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main-styles.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/sections.css">
     <link rel="stylesheet" href="./css/footer.css">
-
+    <link rel="stylesheet" href="./css/sections.css">
 
 </head>
 
 <body>
     <main>
-        <header class="main-header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid justify-content-between align-items-center">
-                    <a class="navbar-brand" href="#">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-header">
+                <div class="container-fluid align-items-center">
+                    <a class="navbar-brand order-2 order-lg-0" href="#index.html">
                         <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                     </a>
-                    <h1 id="main-title" class="d-lg-none">Mundo Animal</h1>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <h1 id="main-title" class="d-lg-none order-1 d-lg-none">Mundo Animal</h1>
+                    <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-
-                        <i class="bi-list"></i>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse d-none d-sm-block" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -39,27 +37,24 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    productos
+                                    Productos
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
+                                    <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                    <li><a class="dropdown-item" href="#">Juguetes</a></li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#main-footer">Ubicación</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ubicación</a>
-                            </li>
                         </ul>
-                        <form class="d-flex" id="form-header">
+                        <form class="d-flex flex-column flex-lg-row" id="form-header">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit" id="search-button"><i
+                            <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
                                     class="bi-search"></i></button>
                             <button class="btn btn-outline-success" type="submit">Ingresa</button>
                             <button class="btn btn-outline-success" type="submit">Regístrate</button>
@@ -69,80 +64,93 @@
             </nav>
         </header>
         <section id="main-info-content">
+            <!--menu mobile-->
             <div class="dropdown">
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="main-dropdown">
                     <li><a class="dropdown-item" href="#">Inicio</a></li>
                     <li><a class="dropdown-item" href="#">Productos</a></li>
                     <li><a class="dropdown-item" href="#">Contacto</a></li>
                     <li><a class="dropdown-item" href="#">Ubicación</a></li>
+                    <hr>
+                    <li class="row justify-content-center">
+                        <div class="col-10">
+                            <form class="d-flex" id="form-header">
+                                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+
+                            </form>
+                        </div>
+                        <div class="col-10 row">
+                            <button class="btn btn-outline-success" type="submit">Ingresa</button>
+                            <button class="btn btn-outline-success" type="submit">Regístrate</button>
+                        </div>
+
+                        </form>
+                    </li>
+
                 </ul>
             </div>
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!--carousel-->
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
-
-                        <div class="container">
-
+                        <img src="./assets/img/img-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
-
-                        <div class="container">
-
+                        <img src="./assets/img/img-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="#777" />
-                        </svg>
-
-                        <div class="container">
-
+                        <img src="./assets/img/img-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <button id="arrow-up">
-                <i class="bi bi-arrow-up"></i>
+            <button id="arrow-up" class="btn">
+                <i class="bi-arrow-up"></i>
             </button>
         </section>
-        <footer class="d-flex flex-lg-column justify-content-center" id="main-footer">
-            <div class="d-flex flex-column flex-lg-row col-lg-10 justify-content-center">
-                <div class="col-12 col-lg-2">
+        <footer class="d-flex flex-column justify-content-center" id="main-footer">
+            <div class="d-flex flex-row col-12 flex-wrap flex-lg-row col-lg-10 justify-content-lg-center">
+                <div class="col-6 col-lg-2">
                     <h5>Nosotros</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a>
+                        </li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contáctanos</a></li>
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-6 col-lg-2">
                     <h5>Productos</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nutrición</a></li>
@@ -151,7 +159,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-lg-2">
+                <div class="col-6 col-lg-2">
                     <h5>Servicios</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pedidos</a></li>
@@ -160,15 +168,16 @@
                 </div>
 
                 <div class="col-12 col-lg-2">
+                    <h5>Ubicación</h5>
                     <iframe id="map-location"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1631425262850!5m2!1ses!2sco"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <hr>
-            <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-between" id="social-footer">
-                <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
+            <div class="d-flex flex-column flex-lg-row col-lg-12" id="social-footer">
+                <p class="order-1">&copy; 2021 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex flex-row justify-content-center order-0">
                     <li class="ms-3">
                         <a class="link-dark" href="#">
                             <i class="bi bi-facebook"></i>
@@ -193,7 +202,7 @@
             </div>
         </footer>
     </main>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -1,7 +1,6 @@
-document.addEventListener("click", e => {
-    if(e.target.dataset.bsTarget || 
-        e.target.className === "bi-list" ||
-        e.target.className === "dropdown-item"){
-        document.querySelector("#main-dropdown").classList.toggle("move-right");
-    }
-})
+document.addEventListener("click", (e) => {
+  if (e.target.id === "arrow-up" ||
+  e.target.className === "bi-arrow-up") {
+    window.scroll(0, 0);
+  }
+});

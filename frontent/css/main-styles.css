@@ -9,11 +9,7 @@
     --color-7:#F1DD3C;
     --color-8:#FFFBD2;
 }
-html{
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    scroll-snap-type: y mandatory;
-}
+
 *{
     font-family: 'Indie Flower' !important;
 }
@@ -21,8 +17,5 @@ img{
     max-width: 100%;
     height: auto;
 }
-main, 
-#main-info-content{
-    position: relative;
-}
+
 
