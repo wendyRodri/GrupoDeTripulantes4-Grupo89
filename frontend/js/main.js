@@ -2,6 +2,7 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 function resize(scroll_pos) {
+  
   if (scroll_pos > 140) {
     
     document.querySelector("#main-navbar").classList.add('reduce-height');
@@ -11,6 +12,12 @@ function resize(scroll_pos) {
   } else {
     document.querySelector("#main-navbar").classList.remove("reduce-height");
     document.querySelector("#main-logo").classList.remove('reduce-logo-size');
+  }
+
+  if(scroll_pos > 410){
+    document.querySelector('.social-menu-main').classList.add('d-none');
+  }else{
+    document.querySelector('.social-menu-main').classList.remove('d-none');
   }
 }
 
@@ -24,5 +31,7 @@ window.addEventListener('scroll', function(e) {
   }
   ticking = true;
 });
+
+
 
 

@@ -20,80 +20,87 @@
 </head>
 
 <body>
-    <main>
-        <header class="sticky-lg-top">
-            <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light main-header">
-                <div class="container-fluid align-items-center">
-                    <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
-                        <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
-                    </a>
-                    <h1 id="main-title" class="d-lg-none order-1 d-lg-none">Mundo Animal</h1>
-                    <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item d-none">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
-                                    <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                    <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#main-footer">Ubicación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex flex-column flex-lg-row" id="form-header">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
-                                    class="bi-search"></i></button>
-                            <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                            <button class="btn btn-outline-success" type="submit">Regístrate</button>
-                        </form>
-                    </div>
+
+    <header id="main-header" class="sticky-lg-top">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid align-items-center">
+                <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
+                    <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
+                </a>
+                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none">Mundo Animal</h1>
+                <button class="navbar-toggler order-0 d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse d-md-flex d-md-block d-lg-block" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-11 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
+                                <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#map-location">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex flex-column flex-md-row flex-lg-row col-md-11 order-md-0 order-lg-1 col-lg-5" id="form-header">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success d-sm-block d-none" type="submit" id="search-button"><i
+                                class="bi-search"></i></button>
+                        <button class="btn btn-outline-success" type="submit">Ingresa</button>
+                        <button class="btn btn-outline-success" type="submit">Regístrate</button>
+                    </form>
                 </div>
-            </nav>
-        </header>
-        <section id="main-info-content">
-            <!--menu mobile-->
-            <div class="dropdown">
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="main-dropdown">
-                    <li><a class="dropdown-item" href="#">Inicio</a></li>
-                    <li><a class="dropdown-item" href="#">Productos</a></li>
-                    <li><a class="dropdown-item" href="#">Contacto</a></li>
-                    <li><a class="dropdown-item" href="#">Ubicación</a></li>
-                    <hr>
-                    <li class="row justify-content-center">
-                        <div class="col-10">
-                            <form class="d-flex" id="form-header">
-                                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-
-                            </form>
-                        </div>
-                        <div class="col-10 row">
-                            <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                            <button class="btn btn-outline-success" type="submit">Regístrate</button>
-                        </div>
-
-                        </form>
-                    </li>
-
-                </ul>
             </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-2">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-none">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
+                            <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map-location">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-column flex-lg-row" id="form-header">
+                    <div class="col-12 d-flex flex-row">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
+                                class="bi-search"></i></button>
+                    </div>
 
+                    <button class="btn btn-outline-success" type="submit">Ingresa</button>
+                    <button class="btn btn-outline-success" type="submit">Regístrate</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="main-info-content">
             <!--carousel-->
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -138,73 +145,93 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
+            <ul class="social-menu-main d-flex flex-lg-column align-items-center justify-content-lg-evenly">
+                <li>
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
         </section>
-        <footer class="d-flex flex-column justify-content-center" id="main-footer">
-            <div class="d-flex flex-row col-12 flex-wrap flex-lg-row justify-content-lg-evenly">
-                <div class="col-6 col-lg-1">
-                    <h5>Nosotros</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contáctanos</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-lg-1">
-                    <h5>Productos</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nutrición</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accesorios</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Juguetes</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-lg-1">
-                    <h5>Servicios</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pedidos</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Asesorías</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-lg-4">
-                    <h5>Ubicación</h5>
-                    <iframe id="map-location"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1631425262850!5m2!1ses!2sco"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <hr>
-            <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-lg-between" id="social-footer">
-                <p class="order-1 order-lg-0">&copy; 2021 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex flex-row justify-content-center order-0 order-lg-1">
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+    </main>
+    <footer class="d-flex flex-column justify-content-center" id="main-footer">
+        <div class="d-flex flex-row col-12 flex-wrap flex-lg-row justify-content-lg-evenly">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
+                <h5>Nosotros</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a>
                     </li>
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <i class="bi bi-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="link-dark" href="#">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contáctanos</a></li>
                 </ul>
             </div>
-        </footer>
-        
-    </main>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
+                <h5>Productos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nutrición</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accesorios</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Juguetes</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
+                <h5>Servicios</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pedidos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Asesorías</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-12 col-lg-5 d-flex flex-column align-items-center">
+                <h5>Ubicación</h5>
+                <iframe id="map-location"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1631425262850!5m2!1ses!2sco"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-column flex-lg-row col-lg-12 justify-content-lg-between" id="social-footer">
+            <p class="order-1 order-lg-0 text-center">&copy; 2021 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex flex-row justify-content-evenly order-0 order-lg-1">
+                <li class="ms-3">
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-dark" href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
 </body>

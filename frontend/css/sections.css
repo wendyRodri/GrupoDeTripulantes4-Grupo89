@@ -4,27 +4,30 @@
 #main-info-content {
   height: 100vh;
 }
-.carousel-item {
-  height: 40vh;
-}
+
 .carousel-indicators button {
   height: 10px !important;
   width: 10px !important;
   border-radius: 100%;
 }
-
-
-/*Small devices*/
-@media (max-width: 576px) {
+.social-menu-main {
+  background-color: var(--color-7);
+  width: 25px;
+  list-style-type: none;
+  padding: 20px;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+}
+/*x-small-devices*/
+@media (max-width: 575px) {
   #main-info-content {
     width: 90%;
     margin: auto;
   }
-  #carousel {
+  #carouselExampleCaptions {
     margin-top: 5%;
-  }
-  #arrow-up {
-    display: none;
   }
   .dropdown {
     margin-top: 20px;
@@ -48,32 +51,55 @@
   .dropdown-menu .bi-search {
     color: var(--color-4);
   }
+  .social-menu-main {
+    display: none !important;
+  }
+  #map-location {
+    width: 300px;
+    height: 350px;
+  }
 }
-
-/*Medium devices*/
-@media (min-width: 577px) and (max-width: 991px) {
+/*small-devices*/
+@media (min-width: 576px) and (max-width: 767px) {
+  #carouselExampleCaptions {
+    width: 90%;
+    margin: 20px auto auto;
+  }
+  .social-menu-main{
+    display: none!important;
+  }
 }
-
-/*Large devices*/
+/*medium-devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .social-menu-main{
+    display: none!important;
+  }
+}
+/*large-devices*/
 @media (min-width: 992px) {
-  #main-info-content {
-    width: 100%;
+  .social-menu-main {
+    right: 10px;
   }
-  .carousel-inner {
-    height: 60vh;
+  .social-menu-main li a {
+    font-size: 1.3em;
+    color: var(--color-1);
+  }
+  .carousel-item {
+    height: 70vh;
   }
 }
-
-#arrow-up {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  border: 2px solid var(--bs-yellow);
-  line-height: 60px;
+@media (min-width: 992px) and (max-width: 1199px) {
 }
-.bi-arrow-up {
-  font-size: 2em;
+/*extra-large-devices*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/*extra-extra-large-devices*/
+@media (min-width: 1400px) {
+  main {
+    width: 80%;
+    margin: auto;
+  }
+  .social-menu-main {
+    right: 150px;
+  }
 }
