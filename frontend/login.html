@@ -20,22 +20,23 @@
 </head>
 
 <body>
-    <header>
-        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="sticky-lg-top">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light main-header">
             <div class="container-fluid align-items-center">
                 <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
                     <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                 </a>
-                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none">Mundo Animal</h1>
-                <button class="navbar-toggler order-0 d-md-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2"
+                <h1 id="main-title" class="d-lg-none order-1 d-lg-none">Mundo Animal</h1>
+                <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-md-flex d-md-block d-lg-block" id="navbarSupportedContent">
-                    <ul
-                        class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-11 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5">
-
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item d-none">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,55 +49,20 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#map-location">Ubicación</a>
+                            <a class="nav-link" href="#main-footer">Ubicación</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex flex-column flex-md-row flex-lg-row col-md-11 order-md-0 order-lg-1 col-lg-5"
-                        id="form-header">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success d-sm-block d-none" type="submit" id="search-button"><i
+                    <form class="d-flex flex-column flex-lg-row" id="form-header">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
                                 class="bi-search"></i></button>
                         <button class="btn btn-outline-success" type="submit">Ingresa</button>
                         <button class="btn btn-outline-success" type="submit">Regístrate</button>
                     </form>
                 </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-2">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item d-none">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
-                            <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#map-location">Ubicación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex flex-column flex-lg-row" id="form-header">
-                    <div class="col-12 d-flex flex-row">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
-                                class="bi-search"></i></button>
-                    </div>
-
-                    <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                    <button class="btn btn-outline-success" type="submit">Regístrate</button>
-                </form>
             </div>
         </nav>
     </header>
