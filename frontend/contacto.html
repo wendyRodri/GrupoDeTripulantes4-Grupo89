@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Contacto</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/sections.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body>
@@ -26,7 +26,8 @@
                 <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="/frontend/index.html">
                     <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                 </a>
-                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none"><a class="titleMundoAnimal" href="/frontend/index.html">Mundo Animal</a></h1>
+                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none"><a class="titleMundoAnimal"
+                        href="/frontend/index.html">Mundo Animal</a></h1>
                 <button class="navbar-toggler order-0 d-md-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +60,10 @@
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success d-sm-block d-none" type="submit" id="search-button"><i
                                 class="bi-search"></i></button>
-                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
-                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn"
+                                href="/frontend/login.html">Ingresa</a></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn"
+                                href="/frontend/registro.html">Regístrate</a></button>
                     </form>
                 </div>
             </div>
@@ -94,14 +97,45 @@
                                 class="bi-search"></i></button>
                     </div>
 
-                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
-                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn"
+                            href="/frontend/login.html">Ingresa</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn"
+                            href="/frontend/registro.html">Regístrate</a></button>
                 </form>
             </div>
         </nav>
     </header>
     <main>
+        <section id="form-contact">
+            <div id="main-form-container"
+                class="d-flex flex-column align-items-center col-10 col-lg-5 col-md-6 col-sm-8">
+                <p id="contact-title">Contacta con nosotros</p>
+                <form class="d-flex flex-column align-items-center col-12">
+                    <div class="col-10">
+                        <label for="nameUser" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="nameUser" aria-describedby="nameUser"
+                            placeholder="Nombre">
+                    </div>
+                    <div class="col-10">
+                        <label for="lastnameUser" class="form-label">Apellido</label>
+                        <input type="password" class="form-control" id="lastnameUser" aria-describedby="lastnameUser"
+                            placeholder="apellido">
+                    </div>
+                    <div class="col-10">
+                        <label for="phoneUser" class="form-label">Telefono</label>
+                        <input type="password" class="form-control" id="phoneUser" aria-describedby="phoneUser"
+                            placeholder="Telefono">
+                    </div>
+                    <div class="col-10">
+                        <label for="emailUser" class="form-label">Email</label>
+                        <input type="password" class="form-control" id="emailUser" aria-describedby="emailHelp"
+                            placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
 
+        </section>
     </main>
     <footer class="d-flex flex-column justify-content-center" id="main-footer">
         <div class="d-flex flex-row col-12 flex-wrap flex-lg-row justify-content-lg-evenly">
@@ -169,4 +203,7 @@
     <script src="./js/bootstrap.js"></script>
     <script src="./js/main.js"></script>
 </body>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/main.js"></script>
+
 </html>
