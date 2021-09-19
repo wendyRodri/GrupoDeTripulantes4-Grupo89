@@ -42,7 +42,7 @@ h2 {
     margin-left: 10px;
 }
 .adminDetails form input{
-    background-color: #FFFBD2;
+    background-color: var(--amarilloClaro);
     border: none;
     border-radius: 13px;
     width: 100%;
@@ -97,7 +97,7 @@ h2 {
     padding: 15px;
     width: 90%;
     border-radius: 14px;
-    background-color: #FFFBD2;
+    background-color: var(--amarilloClaro);
     box-shadow: 5px 5px 4px var( --bs-gray-400);
 }
 .imageProduct{
@@ -141,7 +141,7 @@ h2 {
 }
 .productBtn button{
     border: none;
-    background-color: #FFFBD2;
+    background-color: var(--amarilloClaro);
     color: red;
     font-size: 2rem;
     margin: 0;

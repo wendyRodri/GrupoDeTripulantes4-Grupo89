@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,17 +22,18 @@
     <header id="main-header" class="sticky-lg-top">
         <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid align-items-center">
-                <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
+                <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="/frontend/index.html">
                     <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                 </a>
-                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none">Mundo Animal</h1>
+                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none"><a class="titleMundoAnimal" href="/frontend/index.html">Mundo Animal</a></h1>
                 <button class="navbar-toggler order-0 d-md-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse d-md-flex d-md-block d-lg-block" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-11 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5">
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-11 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5">
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -40,24 +41,25 @@
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
-                                <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Juguetes</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#map-location">Ubicación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="/frontend/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex flex-column flex-md-row flex-lg-row col-md-11 order-md-0 order-lg-1 col-lg-5" id="form-header">
+                    <form class="d-flex flex-column flex-md-row flex-lg-row col-md-11 order-md-0 order-lg-1 col-lg-5"
+                        id="form-header">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         <button class="btn btn-outline-success d-sm-block d-none" type="submit" id="search-button"><i
                                 class="bi-search"></i></button>
-                        <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                        <button class="btn btn-outline-success" type="submit">Regístrate</button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
                     </form>
                 </div>
             </div>
@@ -72,16 +74,16 @@
                             Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
-                            <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Juguetes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#map-location">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="/frontend/contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex flex-column flex-lg-row" id="form-header">
@@ -91,8 +93,8 @@
                                 class="bi-search"></i></button>
                     </div>
 
-                    <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                    <button class="btn btn-outline-success" type="submit">Regístrate</button>
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
                 </form>
             </div>
         </nav>
