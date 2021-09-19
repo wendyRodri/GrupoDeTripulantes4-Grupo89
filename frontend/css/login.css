@@ -38,9 +38,20 @@
 }
 .input-formulario{
   margin:10% 0;
+  padding: 10px 0;
+  border: 1px solid var(--color-1);
+  border-radius: 10px;
+}
+.input-formulario input{
+  background-color: var(--amarilloClaro);
+  border: none;
+  margin: 25px 10px;
+  width: 93%;
 }
 .btn-primary{
   width: 40%;
+  box-shadow: 5px 5px 4px var( --bs-gray-400);
+  font-weight: 600;
 }
 
 /*x-small-devices*/

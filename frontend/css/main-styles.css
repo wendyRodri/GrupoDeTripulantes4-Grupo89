@@ -8,6 +8,7 @@
   --color-6: #2e92ef;
   --color-7: #f1dd3c;
   --color-8: #fffbd2;
+  --amarilloClaro: #FFFBD2;
 }
 
 * {
@@ -19,5 +20,11 @@ img {
 }
 main {
   position: relative;
+}
+a{
+  text-decoration: none;
+}
+a.titleMundoAnimal{
+  color: white;
 }
 

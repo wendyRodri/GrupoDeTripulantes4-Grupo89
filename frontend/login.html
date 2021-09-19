@@ -20,49 +20,83 @@
 </head>
 
 <body>
-    <header class="sticky-lg-top">
-        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light main-header">
+    <header id="main-header" class="sticky-lg-top">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid align-items-center">
-                <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="#index.html">
+                <a id="main-logo" class="navbar-brand order-2 order-lg-0" href="/frontend/index.html">
                     <img src="./assets/img/logo-mundo-animal-mobile.png" alt="">
                 </a>
-                <h1 id="main-title" class="d-lg-none order-1 d-lg-none">Mundo Animal</h1>
-                <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                <h1 id="main-title" class="d-lg-none order-1 d-md-none d-lg-none"><a class="titleMundoAnimal" href="/frontend/index.html">Mundo Animal</a></h1>
+                <button class="navbar-toggler order-0 d-md-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-list"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item d-none">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
+                <div class="collapse navbar-collapse d-md-flex d-md-block d-lg-block" id="navbarSupportedContent">
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-11 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5">
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
-                                <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Alimentos</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="/frontend/productos.html">Juguetes</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#main-footer">Ubicación</a>
+                            <a class="nav-link" href="#map-location">Ubicación</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="/frontend/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex flex-column flex-lg-row" id="form-header">
+                    <form class="d-flex flex-column flex-md-row flex-lg-row col-md-11 order-md-0 order-lg-1 col-lg-5"
+                        id="form-header">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success d-sm-block d-none" type="submit" id="search-button"><i
+                                class="bi-search"></i></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-2">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-none">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="products-menu">
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Alimentos</a></li>
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="/frontend/productos.html">Juguetes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map-location">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-column flex-lg-row" id="form-header">
+                    <div class="col-12 d-flex flex-row">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button"><i
                                 class="bi-search"></i></button>
-                        <button class="btn btn-outline-success" type="submit">Ingresa</button>
-                        <button class="btn btn-outline-success" type="submit">Regístrate</button>
-                    </form>
-                </div>
+                    </div>
+
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/login.html">Ingresa</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a class="linkBtn" href="/frontend/registro.html">Regístrate</a></button>
+                </form>
             </div>
         </nav>
     </header>
@@ -78,12 +112,9 @@
                     <h6 class="card-subtitle mb-2 text-center text-muted">Por favor Regístrese o Inicie Sesión</h6>
 
                     <div class="input-formulario">
-                        <label for="floatingInput">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="floatingInput" placeholder="ejemplo@nombre">
-                    </div>
-                    <div class="input-formulario">
-                        <label for="floatingPassword">Contraseña</label>
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="**********">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="cédula:">
+  
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="contraseña:">
                     </div>
                     <div class="d-flex flex-row align-items-center">
                         <label for="recordarme" class="order-1">Recordarme</label>
@@ -164,8 +195,7 @@
             </ul>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
