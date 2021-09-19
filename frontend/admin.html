@@ -100,14 +100,18 @@
         </nav>
     </header>
 
-    <main>
+    <main class="mainContainer">
         <section class="adminSection">
             <h2>Admin</h2>
             <div class="adminDetails">
                 <img class="adminPhoto" src="./assets/img/logo-mundo-animal-mobile.png" alt=""> 
                 <form>
-                    <div class="ejemplo"><input type="text" placeholder="1122xxxx"><i class="bi bi-pencil-fill"></i></div>
-                    <input type="password" placeholder="xxxxxx"><i class="bi bi-pencil-fill"></i>
+                    <div class="pencilOnInput">
+                        <input type="text" placeholder="1122xxxx"><div class="pencilIcon"><i class="bi bi-pencil-fill"></i></div>
+                    </div>
+                    <div class="pencilOnInput">
+                        <input type="password" placeholder="xxxxxx"><div class="pencilIcon"><i class="bi bi-pencil-fill"></i></div>
+                    </div>
                 </form>     
             </div>
             <div class="adminBtns"> 
@@ -118,7 +122,7 @@
         <section class="productsSection">
             <div class="productsSectionHeader">
                 <h2>Productos</h2>
-                <div class="col-12 d-flex flex-row">
+                <div>
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success d-sm-block" type="submit" id="search-button">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#01215c" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -127,8 +131,31 @@
                             <line x1="21" y1="21" x2="15" y2="15" />
                           </svg>
                     </button>
-                </div> 
+                </div>
             </div>
+            <article class="productAdmin">
+                <form action="" method="POST">
+                    <div class="imageProduct">
+                        <img class="productPhoto" src="./assets/img/logo-mundo-animal-mobile.png" alt=""> 
+                        <fieldset class="infoProduct">
+                            <label>Nombre</label>
+                            <input type="text"><i class="bi bi-pencil-fill"></i>
+                            <label>Precio</label>
+                            <input type="number"><i class="bi bi-pencil-fill"></i>
+                            <label>Cantidad</label>
+                            <input type="number"><i class="bi bi-pencil-fill"></i>
+                            <label>Descripción</label>
+                            <input type="text"><i class="bi bi-pencil-fill"></i>
+                        </fieldset>
+                    </div>
+                    <div class="productBtn">
+                        <input type="submit" value="Guardar cambios">
+                        <form action="?_method=DELETE" id="button-delete" method="POST">
+                            <button class="delete-btn" type="submit"><i class="bi bi-trash"></i></i></button>
+                          </form>
+                    </div>
+                </form>
+            </article>
             <article class="productAdmin">
                 <form action="" method="POST">
                     <div class="imageProduct">

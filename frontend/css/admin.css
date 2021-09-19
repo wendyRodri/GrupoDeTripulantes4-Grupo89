@@ -1,6 +1,11 @@
 h2 {
     font-weight: bold;
     margin: 12px;
+    color: var(--color-4);
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
 }
 .adminSection{
     display: flex;
@@ -32,11 +37,13 @@ h2 {
     color: var(--color-4);
     font-size: larger;
 }
-.ejemplo{
-   
+.pencilOnInput{
+    position: relative;
 }
-.adminDetails form .bi-pencil-fill{
-
+.pencilIcon{
+    position: absolute;
+    top: 25%;
+    left: 85%;
 }
 .infoProduct .bi-pencil-fill{
     margin-left: 10px;
@@ -49,7 +56,6 @@ h2 {
     height: 2.5rem;
     margin: 10px 2px;
     padding: 2px;
-    display: inline;
 }
 .adminBtns {
     display: flex;
@@ -72,15 +78,20 @@ h2 {
  /*PRODUCTS*/
 
 .productsSectionHeader{
-    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px;
     border-top: 2px solid var(--color-1);
     border-bottom: 2px solid var(--color-1);
     padding: 8px 1px 18px 1px;
+}
+.productsSectionHeader div{
     display: flex;
-    flex-direction: row;
 }
 .productsSectionHeader input{
-    width: auto;
+    margin-right: 1rem;
+    width: 60%;
     border: none;
     border-bottom: 2px solid var(--color-4);
 }
@@ -93,12 +104,13 @@ h2 {
     font-size: 1.5rem;
 }
 .productAdmin{
-    margin: 25px 20px;
+    margin: 25px auto;
     padding: 15px;
     width: 90%;
     border-radius: 14px;
     background-color: var(--amarilloClaro);
     box-shadow: 5px 5px 4px var( --bs-gray-400);
+    
 }
 .imageProduct{
     display: flex;
@@ -112,10 +124,10 @@ h2 {
     margin: 15px;
 }
 .infoProduct{
-    margin: 15px;
+    margin: 10px 2px;
 }
 .infoProduct label{
-    display: ;
+    margin-right: 65%;
 }
 .infoProduct input {
     width: 80%;
@@ -145,4 +157,10 @@ h2 {
     color: red;
     font-size: 2rem;
     margin: 0;
+}
+@media (min-width: 1024px) {
+    .mainContainer{
+        flex-direction: row;
+    }
+    
 }
