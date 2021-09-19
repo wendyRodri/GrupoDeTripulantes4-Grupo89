@@ -33,11 +33,10 @@ h2 {
     font-size: larger;
 }
 .ejemplo{
-    display: inline;
-    position: relative;
+   
 }
 .adminDetails form .bi-pencil-fill{
-    position: absolute;
+
 }
 .infoProduct .bi-pencil-fill{
     margin-left: 10px;
