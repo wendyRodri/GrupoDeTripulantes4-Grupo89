@@ -88,6 +88,10 @@
   .card-product {
     margin: 5% 0;
   }
+  .categories-img{
+    margin: 5% 0;
+    padding:5% 0
+  }
 }
 /*small-devices*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -104,6 +108,10 @@
   #index-product {
     padding: 5% 0;
   }
+  .categories-img{
+    margin: 3% 0;
+    padding:3% 0
+  }
 }
 /*medium-devices*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -112,6 +120,10 @@
   }
   .card-product {
     margin: 2% 0;
+  }
+  .categories-img{
+    margin: 2% 0;
+    padding:2% 0
   }
 }
 /*large-devices*/
@@ -136,6 +148,11 @@
   .card-product{
     width: 20%;
   }
+  .categories-img{
+    margin: 5% 0;
+    padding:5% 0
+  }
+  
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 }
