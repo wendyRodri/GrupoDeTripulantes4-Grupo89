@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/productos.css">
 
 </head>
 
@@ -69,46 +70,100 @@
         </header>
 
         <main>
+            <section id="seccion-productos">
+                <div class="d-flex flex row">
+                    <div class="col-2">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  TODOS LOS PRODUCTOS
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                      <li> <a href="">Mirringo Adulto</a></li>
+                                      <li> <a href="">Agility Gold</a></li>
+                                      <li> <a href="">Whiskas Gatitos</a></li>
+                                      <li> <a href="">Chunky Adulto C.A.S</a></li>
+                                      <li> <a href="">Chunky Cachorro Pollo</a></li>
+                                      <li> <a href="">Dog Chow Adulto</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    <div class="col-10">
+                        <div class="container">
+                            <div class="row">
+                                <h2 id="products-title">
+                                    PRODUCTOS
+                                </h2>
+                                <hr>
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg"> Mirringo Adulto x 500g </p>
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos">
+                                    <img src="../imagenes/Mirringo adulto 1kg.JPG" alt="">
+                                </div>
+                                <p class="price">$3.700</p>  
+                            </div>
 
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <h2>
-                            PRODUCTOS
-                        </h2>
-                    <div class="col">
-                        <p class="toptextimg"> Mirringo Adulto x 500g </p>
-                        <img src="../imagenes/Mirringo adulto 1kg.JPG" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="toptextimg">Agility Gold x 1.5Kg</p> 
-                        <img src="../imagenes/agility gold gatos.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="toptextimg"> Whiskas Gatitos </p>
-                        <img src="../imagenes/whiskas gatitos.JPG" alt="">
-                    </div>
-                    
-                    </div>
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg">Agility Gold x 1.5Kg</p>
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos"> 
+                                    <img src="../imagenes/agility gold gatos.jpg" alt="">
+                                </div>
+                                <p class="price">$31.000</p>
+                            </div>
+
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg"> Whiskas Gatitos </p>
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos">
+                                <img src="../imagenes/whiskas gatitos.JPG" alt="">
+                                
+                                </div>
+                                <p class="price">$12.000</p>
+                            </div>
+                            
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg"> Chunky Adulto x 1.5kg </p>
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos">
+                                <img src="../imagenes/Chunky adulto cordero.jpg" alt="">
+                                
+                                </div>
+                                <p class="price">$20.000</p>
+                            </div>
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg">Chunky Cachorro Pollo</p> 
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos">
+                                <img src="../imagenes/Chunky cachorro pollo.jpg" alt="">
+                                
+                                </div>
+                                <p class="price">$3.600</p>
+                            </div>
+                            <div class="col-4 contenedor-productos">
+                                <p class="toptextimg"> Dog Chow Adulto 450g </p>
+                                <div class="d-flex flex-column align-items-center contenedor-img-productos">
+                                <img src="../imagenes/dogchow cachorros.JPG" alt="">
+                                
+                                </div> 
+                                <p class="price">$4.800</p> 
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>  
                 </div>
-                <div class="container">
-                    <div class="row">
-                    <div class="col">
-                        <p class="toptextimg"> Chunky Adulto x 12kg </p>
-                        <img src="../imagenes/Chunky adulto cordero.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="toptextimg">Chunky Cachorro Pollo</p> 
-                        <img src="../imagenes/Chunky cachorro pollo.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <p class="toptextimg"> Dog Chow Adulto </p>
-                        <img src="../imagenes/dogchow cachorros.JPG" alt="">
-                    </div>
-                    
-                    </div>
-                </div>
-            </div>  
+                
+            </section>
               
         </main>
 
