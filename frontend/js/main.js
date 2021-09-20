@@ -2,22 +2,26 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 function resize(scroll_pos) {
+
+  let main_navbar = document.querySelector("#main-navbar");
+  let main_logo = document.querySelector("#main-logo");
+  let social_menu_main = document.querySelector('.social-menu-main');
   
-  if (scroll_pos > 140) {
+  if (scroll_pos > 130) {
     
-    document.querySelector("#main-navbar").classList.add('reduce-height');
-    document.querySelector("#main-logo").classList.add('reduce-logo-size');
+    main_navbar.classList.add('reduce-height');
+    main_logo.classList.add('reduce-logo-size');
    
 
   } else {
-    document.querySelector("#main-navbar").classList.remove("reduce-height");
-    document.querySelector("#main-logo").classList.remove('reduce-logo-size');
+    main_navbar.classList.remove("reduce-height");
+    main_logo.classList.remove('reduce-logo-size');
   }
 
-  if(scroll_pos > 410){
-    document.querySelector('.social-menu-main').classList.add('d-none');
+  if(scroll_pos > 870){
+    social_menu_main.classList.add('d-none');
   }else{
-    document.querySelector('.social-menu-main').classList.remove('d-none');
+    social_menu_main.classList.remove('d-none');
   }
 }
 
