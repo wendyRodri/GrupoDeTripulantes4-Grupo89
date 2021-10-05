@@ -1,8 +1,13 @@
 'use strict';
+const mongoose = require("mongoose");
+const schemaProduct = mongoose.Schema({
+  nombre: { type: String, require: true },
+  categoria: {type:String, require:true},
+  imagen: { type: String, require: true },
+  descripcion:String,
+  precio: {type:Number, require:true},
+  cantidad: {type:Number, require:true},
+  stock: { type: Boolean, require: true },
+});
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#lifecycle-hooks)
- * to customize this model
- */
-
-module.exports = {};
+const product = (module.exports = mongoose.model('product', schemaProduct));
