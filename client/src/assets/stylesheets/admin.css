@@ -1,0 +1,208 @@
+h2 {
+  font-weight: bold;
+  margin: 12px;
+  color: var(--blue-dark-1);
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.adminSection {
+  display: flex;
+  flex-direction: column;
+}
+.adminSection h2 {
+  text-align: center;
+}
+.adminDetails {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.adminPhoto {
+  opacity: 0.3;
+  max-width: 28%;
+}
+.adminDetails form {
+  border: 2px solid var(--blue-light-1);
+  border-radius: 13px;
+  max-width: 58%;
+  height: auto;
+  padding: 18px 8px;
+}
+.bi-pencil-fill {
+  color: var(--blue-dark-1);
+  font-size: larger;
+}
+.pencilOnInput {
+  position: relative;
+}
+.pencilIcon {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+}
+.infoProduct .bi-pencil-fill {
+  margin-left: 10px;
+}
+.adminDetails form input {
+  background-color: var(--yellow-light-2);
+  border: none;
+  border-radius: 13px;
+  width: 100%;
+  height: 2.5rem;
+  margin: 10px 2px;
+  padding: 2px;
+}
+/* .adminBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+  color: var(--color-2);
+  margin: 15px 2px;
+}
+.adminBtns a {
+  border-radius: 5px;
+  background-color: var(--blue-light-1);
+  text-align: center;
+  width: 10rem;
+  height: 2rem;
+  padding: 1px 3px;
+  box-shadow: 5px 5px 4px var(--bs-gray-400);
+} */
+
+.adminBtns button{
+    background-color: var(--blue-light-1);
+    border:none;
+}
+.productBtn input:hover,
+.adminBtns button:hover {
+  background-color: var(--blue-dark-1);
+  color: var(--bs-yellow);
+}
+/*PRODUCTS*/
+
+.productsSectionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 10px;
+  border-top: 2px solid var(--blue-light-1);
+  border-bottom: 2px solid var(--blue-light-1);
+  padding: 8px 1px 18px 1px;
+}
+.productsSectionHeader div {
+  display: flex;
+}
+.productsSectionHeader input {
+  margin-right: 1rem;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid var(--blue-dark-1);
+}
+.productsSectionHeader button {
+  border: none;
+}
+.productsSectionHeader button i {
+  color: var(--blue-dark-1);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.productAdmin {
+  margin: 25px auto;
+  padding: 15px;
+  width: 90%;
+  border-radius: 14px;
+  background-color: var(--yellow-light-2);
+  box-shadow: 5px 5px 4px var(--bs-gray-400);
+}
+.imageProduct {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  align-items: center;
+}
+.productPhoto {
+  width: 30%;
+  height: auto;
+  margin: 15px;
+}
+.infoProduct {
+  margin: 10px 2px;
+}
+.infoProduct label {
+  margin-right: 65%;
+}
+.infoProduct input {
+  width: 80%;
+  height: 2rem;
+  border: none;
+  border-radius: 12px;
+}
+.productBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px 2px;
+}
+.productBtn input {
+  background-color: var(--blue-light-1);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px var(--bs-gray-400);
+  color: white;
+  height: 2rem;
+  width: 10rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.productBtn button {
+  border: none;
+  background-color: var(--yellow-light-2);
+  color: red;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.prodRadio label {
+  margin-right: 5% !important;
+}
+
+@media (max-width:576px){
+    .adminDetails form{
+        margin: 5% 0 2%;
+    }
+    .adminSection button{
+        margin: 2% 0;
+    }
+}
+@media (min-width: 992px) {
+  .infoProduct input {
+    margin: 1% 0;
+  }
+  .infoProduct label,
+  .stateTitle {
+    font-size: 1.3rem;
+  }
+  .stateTitle {
+    margin-top: 2%;
+  }
+  .productsSection {
+    width: 60%;
+  }
+  .adminBtns{
+      margin-top: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+}
