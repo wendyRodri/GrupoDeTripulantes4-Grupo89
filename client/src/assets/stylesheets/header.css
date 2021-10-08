@@ -7,8 +7,8 @@
 #main-title {
   color: var(--bs-light);
 }
-a.linkBtn{
-  color: var(--blue-dark-1);
+.btn-outline-success:hover a{
+  color: var(--bs-light)!important;
 }
 
 /*x-small-devices*/

@@ -66,7 +66,7 @@
                   autoplay
                 ></lottie-player>
               </div>
-              <router-link to="/products" class="btn btn-primary">consulta aquí</router-link>
+              <router-link to="/productos" class="btn btn-primary">consulta aquí</router-link>
             </div>
           </div>
           <div class="card-product col-8 col-sm-5 col-md-5 col-lg-2">
@@ -82,7 +82,7 @@
                   autoplay
                 ></lottie-player>
               </div>
-              <router-link to="/products" class="btn btn-primary">consulta aquí</router-link>
+              <router-link to="/productos" class="btn btn-primary">consulta aquí</router-link>
             </div>
           </div>
           <div class="card-product col-8 col-sm-5 col-md-5 col-lg-2">
@@ -98,12 +98,12 @@
                   autoplay
                 ></lottie-player>
               </div>
-              <router-link to="/products" class="btn btn-primary">consulta aquí</router-link>
+              <router-link to="/productos" class="btn btn-primary">consulta aquí</router-link>
             </div>
           </div>
           <div class="card-product col-8 col-sm-5 col-md-5 col-lg-2">
             <div class="card-body d-flex flex-column align-items-center">
-              <h5 class="card-title btn col-10">Salud y Belleza</h5>
+              <h5 class="card-title btn col-10">Útiles de aseo</h5>
               <div class="categories-img">
                 <lottie-player
                   src="https://assets7.lottiefiles.com/packages/lf20_dvek9yf0.json"
@@ -114,7 +114,7 @@
                   autoplay
                 ></lottie-player>
               </div>
-              <router-link to="/products" class="btn btn-primary">consulta aquí</router-link>
+              <router-link to="/productos" class="btn btn-primary">consulta aquí</router-link>
             </div>
           </div>
         </div>

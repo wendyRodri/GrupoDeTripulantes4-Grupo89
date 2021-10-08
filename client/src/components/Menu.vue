@@ -30,10 +30,10 @@
           id="navbarSupportedContent"
         >
           <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-12 order-md-1 justify-content-md-evenly order-lg-0 col-lg-5"
+            class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-12 order-md-1 justify-content-md-evenly order-lg-0 col-lg-4"
           >
             <li class="nav-item dropdown">
-              <router-link to="/products">Productos</router-link>
+              <router-link to="/productos">Productos</router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#map-location">Ubicación</a>
@@ -45,7 +45,7 @@
             </li>
           </ul>
           <form
-            class="d-flex flex-column flex-md-row flex-lg-row col-md-12 order-md-0 order-lg-1 col-lg-5"
+            class="d-flex flex-column flex-md-row flex-lg-row col-md-12 order-md-0 order-lg-1 col-lg-6"
             id="form-header"
           >
             <input
@@ -65,6 +65,12 @@
             </button>
             <button class="btn btn-outline-success" type="submit">
               <router-link to="/register" class="linkBtn">Regístrate</router-link>
+            </button>
+            <button class="btn btn-outline-success" type="submit">
+              <router-link to="/" class="linkBtn" id="sign-off">Salir</router-link>
+            </button>
+            <button class="btn btn-outline-success" type="submit" id="car-icon-link">
+              <router-link to="/" class="linkBtn"><i class="bi bi-cart3"></i></router-link>
             </button>
             <router-link
           to="/"
@@ -94,17 +100,9 @@
               aria-labelledby="navbarDropdown"
               id="products-menu"
             >
-              <li>
-                <router-link class="dropdown-item" to="/products" v-on:click="changeTitle" value="Alimentos">Alimentos</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/products" v-on:click="changeTitle" value="Accesorios">Accesorios</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/products" v-on:click="changeTitle" value="Juguetes">Juguetes</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="/products" v-on:click="changeTitle" value="Salud y Belleza">Salud y Belleza</router-link>
+              <li v-for="categoria in categorias" :key="categoria.id" class="dropdown-item" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent-2">
+                <router-link to="/productos"> {{ categoria.titulo }}</router-link>
               </li>
             </ul>
           </li>
@@ -133,12 +131,12 @@
           </div>
 
           <button class="btn btn-outline-success" type="submit">
-            <router-link to="/login" class="linkBtn"
+            <router-link to="/login"
               >Ingresa</router-link
             >
           </button>
           <button class="btn btn-outline-success" type="submit">
-            <router-link to="/register" class="linkBtn"
+            <router-link to="/register"
               >Regístrate</router-link
             >
           </button>
@@ -153,16 +151,18 @@ import { ref, onMounted } from 'vue';
 import { getTokenApi, deleteTokenApi } from '../api/token';
 import { getCategoriesApi } from '../api/category';
 
+
 export default {
   name: 'Menu',
 
   setup() {
-    let categories = ref(null);
+    let categorias = ref(null);
 
     onMounted(async () => {
       const response = await getCategoriesApi();
-      categories.value = response;
-    });
+      categorias.value = response;
+    },
+    );
 
     const token = getTokenApi();
 
@@ -171,13 +171,16 @@ export default {
       location.replace('/');
     };
     
+    
     return {
       token,
       logout,
-      categories,
+      categorias,
     };
   },
 };
+
+
 </script>
 
 

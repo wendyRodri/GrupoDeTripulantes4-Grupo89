@@ -17,8 +17,8 @@ export async function registerApi(formData) {
       console.log(error);
       return null;
     }
-  }
-  export async function loginApi(formData) {
+}
+export async function loginApi(formData) {
     try {
       const url = `${API_URL}/auth/local`;
       const params = {
@@ -35,4 +35,4 @@ export async function registerApi(formData) {
       console.log(error);
       return null;
     }
-  }
+}
