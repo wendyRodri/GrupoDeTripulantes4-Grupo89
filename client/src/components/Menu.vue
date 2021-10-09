@@ -69,8 +69,8 @@
             <button class="btn btn-outline-success" type="submit">
               <router-link to="/" class="linkBtn" id="sign-off">Salir</router-link>
             </button>
-            <button class="btn btn-outline-success" type="submit" id="car-icon-link">
-              <router-link to="/" class="linkBtn"><i class="bi bi-cart3"></i></router-link>
+            <button class="btn btn-outline-success" type="submit" id="whatsapp-icon-link">
+              <a href="https://api.whatsapp.com/send?phone=573222209054" class="linkBtn"><i class="bi bi-whatsapp"></i></a>
             </button>
             <router-link
           to="/"
@@ -85,16 +85,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent-2">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
+            <router-link class="nav-link dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+              aria-expanded="false" to = "/productos" > 
               Productos
-            </a>
+            </router-link>
             <ul
               class="dropdown-menu"
               aria-labelledby="navbarDropdown"
@@ -152,6 +150,8 @@ import { getTokenApi, deleteTokenApi } from '../api/token';
 import { getCategoriesApi } from '../api/category';
 
 
+
+
 export default {
   name: 'Menu',
 
@@ -176,6 +176,8 @@ export default {
       token,
       logout,
       categorias,
+     
+      
     };
   },
 };

@@ -44,16 +44,21 @@ export default {
     });
 
     const filterCategories = (e) => {
+      const productLink = document.querySelector("#navbarDropdown");
       const button = e.target;
       const card = document.querySelectorAll(".card-prod");
       card.forEach((el) => {
+        
         if (el.dataset.target !== button.innerHTML) {
-          
+          el.parentNode.style.display = "none";
           
         } else {
+         el.parentNode.style.display = "block";
         }
       });
+    
     }
+    
      return{
        categorias,
        filterCategories

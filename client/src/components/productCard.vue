@@ -36,7 +36,7 @@ export default {
   setup() {
     let items = ref(null);
     onMounted(async () => {
-      const responseProducts = await getProducts(20);
+      const responseProducts = await getProducts(40);
       items.value = responseProducts;
     });
     return {

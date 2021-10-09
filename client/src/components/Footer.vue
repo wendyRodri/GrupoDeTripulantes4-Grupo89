@@ -40,17 +40,17 @@
             <p class="order-1 order-lg-0 text-center">&copy; 2021. All rights reserved.</p>
             <ul class="list-unstyled d-flex flex-row justify-content-evenly order-0 order-lg-1">
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://www.facebook.com/Mundo-animal-pet-shop-109439561382295">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://www.instagram.com/mundo_animalps/">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://api.whatsapp.com/send?phone=34123456789">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </li>
