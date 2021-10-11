@@ -91,7 +91,7 @@
             >
               <a
                 class="linkBtn"
-                href="https://api.whatsapp.com/send?phone=34123456789"
+                href="https://api.whatsapp.com/send?phone=573222209054"
                 target="_blank"
               >
                 <i class="bi bi-whatsapp"></i>

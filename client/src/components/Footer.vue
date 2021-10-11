@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="link-dark" href="https://api.whatsapp.com/send?phone=34123456789" target="_blank">
+                    <a class="link-dark" href="https://api.whatsapp.com/send?phone=573222209054" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </li>

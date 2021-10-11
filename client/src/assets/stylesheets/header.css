@@ -12,7 +12,6 @@
   background-color: #53ea65;
   margin-left: 2%;
   transition: all 0.2s ease-in;
-  width: 3.4%;
   border:1px solid var(--bs-light);
 }
 #whatsapp-icon-link:hover{
