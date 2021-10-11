@@ -8,7 +8,7 @@
     <li
       v-for="(item, index) in items"
       :key="index"
-      class="col-10 col-sm-5 col-md-3 col-lg-2"
+      class="col-10 col-sm-5 col-md-3 col-lg-3"
     >
       <div class="card-prod text-center" :data-target="item.categoria.titulo">
         <h5 class="card-title">{{ item.nombre }}</h5>
@@ -18,11 +18,8 @@
         <p class="card-text">
           Precio: <span class="price">${{ item.precio }}</span>
         </p>
-        <router-link 
-          to="https://api.whatsapp.com/send?phone=34123456789" 
-          class="card-link btn btn-success"
-          target="_blank"
-          >Comprar</router-link>
+        <a class="card-link btn btn-success" target="_blank" href="https://api.whatsapp.com/send?phone=573222209054">Comprar</a>
+        
       </div>
     </li>
   </ul>
@@ -49,4 +46,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.product-image-container img{
+ max-height:30vh ;
+  width: auto;
+
+  }
+.card-prod{
+
+}
+</style>

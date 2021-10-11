@@ -10,7 +10,7 @@
         <div class="col-10">
           <label for="nameUser" class="form-label">Nombre</label>
           <input
-            type="email"
+            type="text"
             class="form-control"
             id="nameUser"
             aria-describedby="nameUser"
@@ -20,7 +20,7 @@
         <div class="col-10">
           <label for="lastnameUser" class="form-label">Apellido</label>
           <input
-            type="password"
+            type="text"
             class="form-control"
             id="lastnameUser"
             aria-describedby="lastnameUser"
@@ -30,7 +30,7 @@
         <div class="col-10">
           <label for="phoneUser" class="form-label">Telefono</label>
           <input
-            type="password"
+            type="tel"
             class="form-control"
             id="phoneUser"
             aria-describedby="phoneUser"
@@ -40,7 +40,7 @@
         <div class="col-10">
           <label for="emailUser" class="form-label">Email</label>
           <input
-            type="password"
+            type="email"
             class="form-control"
             id="emailUser"
             aria-describedby="emailHelp"
