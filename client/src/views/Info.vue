@@ -11,23 +11,12 @@
         </div>
         <div class="col-md-8 col-12 position-relative">
           <div class="text-cont">
+            <h2>¡Bienvenido a Mundo Animal!</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatem sapiente debitis repellendus laborum aspernatur.
-              Impedit doloremque fugiat inventore, repellendus magnam rem
-              debitis maxime modi! Temporibus natus aperiam iure ratione facere?
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-              incidunt fuga in qui debitis repudiandae sit nulla adipisci nisi
-              nobis omnis obcaecati cupiditate voluptatum libero, labore,
-              dolorum laborum eius delectus! Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Voluptatem sapiente debitis
-              repellendus laborum aspernatur. Impedit doloremque fugiat
-              inventore, repellendus magnam rem debitis maxime modi! Temporibus
-              natus aperiam iure ratione facere? Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Nostrum incidunt fuga in qui debitis
-              repudiandae sit nulla adipisci nisi nobis omnis obcaecati
-              cupiditate voluptatum libero, labore, dolorum laborum eius
-              delectus!
+              Somos un emprendimiento familiar que nació del amor por las mascotas, en casa vivimos con Marcela, -un alcaravan que llegó un día a casa herido, lo curamos y cuidamos pero cuando estuvo listo para marcharse ya no quería despegarse de nosotros- y Juana, -nuestra gata consentida-.
+            </p>
+            <p>  
+              A la hora de comprar el alimento de ellas vimos como era difícil encontrar todo en un mismo lugar, por eso creamos Mundo Animal, dónde puedes seleccionar los mejores productos desde la comodidad de tu casa y con solo un click podrán tener todo lo que tus mascotas quieran en la comodidad de tu hogar.
             </p>
           </div>
         </div>
