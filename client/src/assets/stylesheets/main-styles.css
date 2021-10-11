@@ -7,6 +7,7 @@
 @import './login-register.css';
 @import './products.css';
 @import './home.css';
+@import './info.css';
 
 :root {
   --blue-light-1: #6fb6f8;

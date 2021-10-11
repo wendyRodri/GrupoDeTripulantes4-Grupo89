@@ -32,16 +32,16 @@
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 flex-row col-md-12 order-md-1 justify-content-md-evenly order-lg-0 col-lg-4"
           >
-            <li class="nav-item dropdown">
-              <router-link to="/productos">Productos</router-link>
+            <li class="nav-item dropdown" id="product-link">
+              <router-link to="/productos" v-on:click="viewCards"
+                >Productos</router-link
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#map-location">Ubicación</a>
             </li>
             <li class="nav-item">
-              <router-link to="/contact" class="nav-link"
-                >Contacto</router-link
-              >
+              <router-link to="/contact" class="nav-link">Contacto</router-link>
             </li>
           </ul>
           <form
@@ -53,44 +53,65 @@
               type="search"
               placeholder="Buscar"
               aria-label="Search"
+              v-model="inputData"
+              required
             />
             <button
               class="btn btn-outline-success d-sm-block d-none"
               type="submit"
-              id="search-button">
+              id="search-button"
+            >
               <i class="bi-search"></i>
             </button>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success">
               <router-link to="/login" class="linkBtn">Ingresa</router-link>
             </button>
-            <button class="btn btn-outline-success" type="submit">
-              <router-link to="/register" class="linkBtn">Regístrate</router-link>
+            <button class="btn btn-outline-success">
+              <router-link to="/register" class="linkBtn"
+                >Regístrate</router-link
+              >
             </button>
-            <button class="btn btn-outline-success" type="submit">
-              <router-link to="/" class="linkBtn" id="sign-off">Salir</router-link>
+            <button class="btn btn-outline-success" @click="logout">
+              <router-link to="/" class="linkBtn" id="sign-off"
+                >Salir</router-link
+              >
             </button>
-            <button class="btn btn-outline-success" type="submit" id="whatsapp-icon-link">
-              <a href="https://api.whatsapp.com/send?phone=573222209054" class="linkBtn"><i class="bi bi-whatsapp"></i></a>
-            </button>
+            
             <router-link
-          to="/"
-          id="main-logo"
-          class="navbar-brand order-2 order-lg-0 d-lg-none"
-        >
-          <img src="../assets/img/logo-mundo-animal-mobile.png" alt="" />
-        </router-link>
+              to="/"
+              id="main-logo"
+              class="navbar-brand order-2 order-lg-0 d-lg-none"
+            >
+              <img src="../assets/img/logo-mundo-animal-mobile.png" alt="" />
+            </router-link>
           </form>
+          <button
+              class=" d-none d-lg-block btn btn-outline-success order-lg-3"
+              id="whatsapp-icon-link"
+            >
+              <a
+                class="linkBtn"
+                href="https://api.whatsapp.com/send?phone=34123456789"
+                target="_blank"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </button>
         </div>
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent-2">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <router-link class="nav-link dropdown-toggle"
+            <router-link
+              class="nav-link dropdown-toggle"
               href="#"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false" to = "/productos" > 
+              aria-expanded="false"
+              to="/productos"
+              v-on:click="viewCards"
+            >
               Productos
             </router-link>
             <ul
@@ -98,9 +119,16 @@
               aria-labelledby="navbarDropdown"
               id="products-menu"
             >
-              <li v-for="categoria in categorias" :key="categoria.id" class="dropdown-item" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent-2">
-                <router-link to="/productos"> {{ categoria.titulo }}</router-link>
+              <li
+                v-for="categoria in categorias"
+                :key="categoria.id"
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent-2"
+              >
+                <router-link to="/productos" v-on:click="filterCards">
+                  {{ categoria.titulo }}</router-link
+                >
               </li>
             </ul>
           </li>
@@ -129,14 +157,10 @@
           </div>
 
           <button class="btn btn-outline-success" type="submit">
-            <router-link to="/login"
-              >Ingresa</router-link
-            >
+            <router-link to="/login">Ingresa</router-link>
           </button>
           <button class="btn btn-outline-success" type="submit">
-            <router-link to="/register"
-              >Regístrate</router-link
-            >
+            <router-link to="/register">Regístrate</router-link>
           </button>
         </form>
       </div>
@@ -145,15 +169,12 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { getTokenApi, deleteTokenApi } from '../api/token';
-import { getCategoriesApi } from '../api/category';
-
-
-
+import { ref, onMounted } from "vue";
+import { getTokenApi, deleteTokenApi } from "../api/token";
+import { getCategoriesApi } from "../api/category";
 
 export default {
-  name: 'Menu',
+  name: "Menu",
 
   setup() {
     let categorias = ref(null);
@@ -161,28 +182,46 @@ export default {
     onMounted(async () => {
       const response = await getCategoriesApi();
       categorias.value = response;
-    },
-    );
+    });
 
     const token = getTokenApi();
 
     const logout = () => {
       deleteTokenApi();
-      location.replace('/');
+      location.replace("/");
     };
-    
-    
+
+    const filterCards = (e) => {
+      const button = e.target;
+      const card = document.querySelectorAll(".card-prod");
+      card.forEach((el) => {
+        
+        if (el.dataset.target !== button.innerHTML) {
+          el.parentNode.classList.add('d-none');
+          
+        } else {
+         el.parentNode.classList.remove('d-none');
+        }
+      });
+    }
+
+    const viewCards = (e) => {
+
+       const card = document.querySelectorAll(".card-prod");
+
+       card.forEach((el) => {
+
+         el.parentNode.classList.remove('d-none');
+        
+      });
+    }
     return {
       token,
       logout,
       categorias,
-     
-      
+      filterCards,
+      viewCards
     };
   },
 };
-
-
 </script>
-
-

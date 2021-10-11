@@ -40,25 +40,21 @@ export default {
     onMounted( async () => {
       const response = await getCategoriesApi();
       categorias.value = response;
-      
     });
 
     const filterCategories = (e) => {
-      const productLink = document.querySelector("#navbarDropdown");
       const button = e.target;
       const card = document.querySelectorAll(".card-prod");
       card.forEach((el) => {
         
         if (el.dataset.target !== button.innerHTML) {
-          el.parentNode.style.display = "none";
+          el.parentNode.classList.add('d-none');
           
         } else {
-         el.parentNode.style.display = "block";
+         el.parentNode.classList.remove('d-none');
         }
       });
-    
     }
-    
      return{
        categorias,
        filterCategories
@@ -66,7 +62,6 @@ export default {
   },
 };
 </script>
-
+  
 <style>
-
 </style>

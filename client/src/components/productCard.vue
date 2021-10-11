@@ -18,9 +18,11 @@
         <p class="card-text">
           Precio: <span class="price">${{ item.precio }}</span>
         </p>
-        <router-link to="" class="card-link btn btn-success"
-          >Comprar</router-link
-        >
+        <router-link 
+          to="https://api.whatsapp.com/send?phone=34123456789" 
+          class="card-link btn btn-success"
+          target="_blank"
+          >Comprar</router-link>
       </div>
     </li>
   </ul>
