@@ -1,0 +1,142 @@
+.img1 img{
+  opacity: 0.3;
+  max-width: 100%;
+  height: auto;
+}
+.img1{
+  width: 50%;
+  margin: auto;
+}
+.card{
+  box-shadow: 0px 0px 10px var( --bs-gray-400);
+  border-radius: 3%;
+}
+.form-control{
+  width:100%;
+}
+.card-title,
+.card-subtitle,
+[for="floatingInput"],
+[for="floatingPassword"],
+[for="recordarme"]{
+  color:var(--color-4);
+  font-weight: bold;
+}
+.btn-primary{
+  background-color: var(--blue-light-1);
+  border:none;
+}
+.btn-primary:hover{
+  background-color: var(--color-4);
+}
+[type="checkbox"]{
+  margin-bottom:5%;
+}
+#recordarme{
+  margin-top: 2%;
+  margin-right: 2%;
+}
+.input-formulario{
+  margin:5% 0;
+  padding: 10px 0;
+  border: 1px solid var(--blue-light-1);
+  border-radius: 10px;
+}
+.input-formulario input{
+  background-color: var(--yellow-light-2);
+  border: none;
+  margin: 25px 10px;
+  width: 93%;
+}
+.btn-primary{
+  width: 40%;
+  box-shadow: 5px 5px 4px var( --bs-gray-400);
+  font-weight: 600;
+}
+#register [type="submit"]{
+  width: 70%;
+}
+#register [type="submit"]:hover,
+#login [type="submit"]:hover{
+  color: var(--bs-light);
+  background-color: var(--blue-dark-1);
+}
+/*x-small-devices*/
+@media (max-width: 575px) {
+  .card{
+      margin: 6%;
+      width: 80%;
+      padding: 2%;
+  }
+  .card-title{
+      font-size: 1.8rem;
+  }
+  .card-subtitle{
+      font-size: 1.2rem;
+      margin:10% 0;
+  }
+  .input-formulario{
+    margin:10%
+  }
+  
+}
+/*small-devices*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .card{
+      margin: 6% auto;
+      width: 60%;
+      padding: 2%;
+  }
+  .card-title{
+      font-size: 1.7rem;
+  }
+  .card-subtitle{
+      font-size: 1.3rem;
+      margin:10% 0;
+  }
+  
+}
+/*medium-devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .card{
+      margin: 5% auto;
+      width: 40%;
+      padding: 2%;
+  }
+  .card-title{
+      font-size: 1.7rem;
+  }
+  .card-subtitle{
+      font-size: 1.3rem;
+      margin:10% 0;
+  }
+}
+/*large-devices*/
+@media (min-width: 992px) {
+  .card{
+      margin: 2.5% auto;
+      width: 30%;
+      padding: 1%;
+  }
+  .card-title{
+      font-size: 2rem;
+
+  }
+  .card-subtitle{
+      font-size: 1.4rem;
+      margin:6% 0;
+
+  }
+  
+}
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+extra-large-devices
+@media (min-width: 1200px) and (max-width: 1399px) {
+  
+}
+extra-extra-large-devices
+@media (min-width: 1400px) {
+  
+} */

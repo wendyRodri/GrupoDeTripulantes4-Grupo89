@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+@import './admin.css';
+@import './contact.css';
+@import './footer.css';
+@import './header.css';
+@import './login-register.css';
+@import './products.css';
+@import './home.css';
+@import './info.css';
+
+:root {
+  --blue-light-1: #6fb6f8;
+  --blue-light-2:#2E92EF;
+  --blue-dark-1: #01215c;
+  --gray-1: #878585;
+  --yellow-1: #f1dd3c;
+  --yellow-light-1: #fffbd2;
+  --yellow-light-2: #FFFBD2;
+}
+
+* {
+  font-family: "Indie Flower" !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+main {
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+a.titleMundoAnimal{
+  color: white;
+}
+
