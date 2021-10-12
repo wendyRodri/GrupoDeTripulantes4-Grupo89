@@ -54,7 +54,7 @@
               placeholder="Buscar"
               aria-label="Search"
               v-model="inputData"
-              required
+             
             />
             <button
               class="btn btn-outline-success d-sm-block d-none"

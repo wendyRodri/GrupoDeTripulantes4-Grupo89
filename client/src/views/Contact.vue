@@ -15,8 +15,8 @@
             id="nameUser"
             aria-describedby="nameUser"
             placeholder="Nombre"
-            v-model="formData.nombre"
-            :class="{ error: formError.nombre }"
+            v-model="formData.Nombre"
+            :class="{ error: formError.Nombre }"
           />
         </div>
         <div class="col-10">
@@ -27,8 +27,8 @@
             id="lastnameUser"
             aria-describedby="lastnameUser"
             placeholder="apellido"
-            v-model="formData.apellido"
-            :class="{ error: formError.apellido }"
+            v-model="formData.Apellido"
+            :class="{ error: formError.Apellido }"
           />
         </div>
         <div class="col-10">
@@ -39,8 +39,8 @@
             id="phoneUser"
             aria-describedby="phoneUser"
             placeholder="Telefono"
-            v-model="formData.telefono"
-            :class="{ error: formError.telefono }"
+            v-model="formData.Telefono"
+            :class="{ error: formError.Telefono }"
           />
         </div>
         <div class="col-10">
@@ -51,15 +51,15 @@
             id="emailUser"
             aria-describedby="emailHelp"
             placeholder="Email"
-            v-model="formData.email"
-            :class="{ error: formError.email }"
+            v-model="formData.Email"
+            :class="{ error: formError.Email }"
           />
         </div>
         <div class="col-10">
           <label for="message" class="form-label">Mensaje</label>
           <textarea name="message" id="message" cols="30" rows="10" class="form-control"
-            v-model="formData.mensaje"
-            :class="{ error: formError.mensaje }"
+            v-model="formData.Mensaje"
+            :class="{ error: formError.Mensaje }"
           >
 
           </textarea>
@@ -99,11 +99,11 @@ export default {
     });
 
     const schemaForm = Yup.object().shape({
-      nombre: Yup.string().required(true),
-      apellido: Yup.string(),
-      telefono: Yup.number().required(true),
-      email: Yup.string().email(true),
-      mensaje: Yup.string().required(true)
+      Nombre: Yup.string().required(true),
+      Apellido: Yup.string(),
+      Telefono: Yup.number().required(true),
+      Email: Yup.string().email(true),
+      Mensaje: Yup.string().required(true)
     });
 
     const contact = async () => {
