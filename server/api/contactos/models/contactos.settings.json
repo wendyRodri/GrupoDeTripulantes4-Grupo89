@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Contactos",
+  "info": {
+    "name": "Contactos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "Apellido": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "biginteger",
+      "required": true,
+      "min": "10"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Mensaje": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

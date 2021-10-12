@@ -1,7 +1,8 @@
 <template>
   <BasicLayouts>
-    <div class="card d-flex flex-column align-items-center">
+    <div id="login" class="card d-flex flex-column align-items-center">
       <h2>Iniciar sesión</h2>
+      <div class="img1 text-center"><img src="../assets/img/logo-mundo-animal-mobile.png" alt=""></div>
       <form class="ui input-formulario col-10 text-center" @submit.prevent="login">
         <div class="">
           <input

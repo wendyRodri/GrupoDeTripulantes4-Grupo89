@@ -56,6 +56,11 @@
 #register [type="submit"]{
   width: 70%;
 }
+#register [type="submit"]:hover,
+#login [type="submit"]:hover{
+  color: var(--bs-light);
+  background-color: var(--blue-dark-1);
+}
 /*x-small-devices*/
 @media (max-width: 575px) {
   .card{

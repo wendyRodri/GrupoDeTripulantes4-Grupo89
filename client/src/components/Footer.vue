@@ -4,27 +4,39 @@
             <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
                 <h5>Nosotros</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas frecuentes</a>
+                    <li>
+                        <router-link to="/info">Quienes somos</router-link>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contáctanos</a></li>
+                    <li>
+                        <router-link to="/contacto">Contáctanos</router-link>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
                 <h5>Productos</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Nutrición</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accesorios</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Juguetes</a></li>
+                    <li>
+                        <router-link to="/productos">Nutrición</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/productos">Accesorios</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/productos">Juguetes</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/productos">Útiles de aseo</router-link>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-12 col-sm-4 col-md-4 col-lg-1 text-center">
                 <h5>Servicios</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pedidos</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Asesorías</a></li>
+            
+                    <li class="nav-item mb-2"><a href="https://api.whatsapp.com/send?phone=34123456789" target="_blank">Pedidos y asesorías</a></li>
+            
                 </ul>
             </div>
 
@@ -40,17 +52,17 @@
             <p class="order-1 order-lg-0 text-center">&copy; 2021. All rights reserved.</p>
             <ul class="list-unstyled d-flex flex-row justify-content-evenly order-0 order-lg-1">
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://www.facebook.com/Mundo-animal-pet-shop-109439561382295" target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://www.instagram.com/mundo_animalps/" target="_blank">
                         <i class="bi bi-instagram"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="link-dark" href="#">
+                    <a class="link-dark" href="https://api.whatsapp.com/send?phone=573222209054" target="_blank">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </li>

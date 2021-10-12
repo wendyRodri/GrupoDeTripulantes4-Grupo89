@@ -2,6 +2,7 @@
   <BasicLayouts>
     <div id="register" class="card d-flex flex-column align-items-center">
       <h2>Registro de usuario</h2>
+      <div class="img1 text-center"><img src="../assets/img/logo-mundo-animal-mobile.png" alt=""></div>
       <form class="ui input-formulario col-10 text-center" @submit.prevent="register">
         <div class="field">
           <input
@@ -13,7 +14,7 @@
         </div>
         <div class="field">
           <input
-            type="text"
+            type="email"
             placeholder="Correo eletronico"
             v-model="formData.email"
             :class="{ error: formError.email }"
@@ -45,6 +46,7 @@
 </template>
 
 <script>
+// ref es para refrecar la información que nos trae vue
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import * as Yup from 'yup';

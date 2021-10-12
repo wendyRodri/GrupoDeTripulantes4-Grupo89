@@ -11,6 +11,9 @@
   color: var(--gray-1);
   border-width: 2px;
 }
+#main-footer a{
+  color:var(--gray-1);
+}
 #main-footer  a:hover{
   color: var(--bs-gray-400);
 }
